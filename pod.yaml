@@ -1,0 +1,18 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: pod
+  labels:
+    project: roboshop
+    envieonment: dev
+spec:
+  containers:
+  - name: frontend
+    image: chanakya1991/frontend:v3
+  - name: user
+    image: chanakya1991/user:v1
+  - name: mongodb
+    image: chanakya1991/mongodb:v2
+  - name: catalogue
+    image: chanakya1991/catalogue:v4
+

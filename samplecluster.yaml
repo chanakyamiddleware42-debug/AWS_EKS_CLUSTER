@@ -10,5 +10,5 @@ nodeGroups:
   - name: ng-1
     instanceType: t3.small
     desiredCapacity: 2
-    min: 1
-    max: 2
+    minSize: 2
+    maxSize: 5

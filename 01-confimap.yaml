@@ -1,0 +1,9 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: configmap-nginx
+  namespace: default
+data:
+  allowed: '"true"'
+  Project: "roboshop"
+  

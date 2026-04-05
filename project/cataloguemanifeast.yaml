@@ -7,7 +7,7 @@ metadata:
     application: catalogue
 data:
   MONGO: '"TRUE"'
-  MONGO_URL: "mongodb://mongodb:27017/catalogue"
+  MONGO_URL: "mongodb://10.43.92.196:27017/catalogue"
 ---
 apiVersion: apps/v1
 kind: Deployment

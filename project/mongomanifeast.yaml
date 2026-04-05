@@ -1,0 +1,24 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: mongodb
+  labels:
+    project: roboshop
+    application: mongodb
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      project: roboshop
+      application: mongodb
+  template:
+    metadata:
+      name: pod
+      labels:
+        project: roboshop
+        application: mongodb
+    spec:
+      containers:
+      - name: frontend
+        image: nginx 
+        

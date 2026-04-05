@@ -19,6 +19,6 @@ spec:
         application: mongodb
     spec:
       containers:
-      - name: frontend
-        image: nginx 
+      - name: mongodb
+        image: chanakya1991/mongodb
         

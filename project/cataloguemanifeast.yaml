@@ -1,0 +1,54 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: catalogue
+  labels:
+    project: roboshop
+    application: catalogue
+data:
+  MONGO: '"TRUE"'
+  MONGO_URL: "mongodb://<MONGODB-SERVER-IPADDRESS>:27017/catalogue"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: catalogue
+  labels:
+    project: roboshop
+    application: catalogue
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      project: roboshop
+      application: catalogue
+  template:
+    metadata:
+      name: pod
+      labels:
+        project: roboshop
+        application: catalogue
+    spec:
+      containers:
+      - name: catalogue
+        image: chanakya1991/catalogue
+        envFrom:
+        - configMapRef:
+          name: catalogue
+  
+---
+apiVersion: v1 
+kind: Service
+metadata:
+  name: catalogue
+  labels:
+    project: roboshop
+    application: catalogue
+spec:
+  selector:
+    project: roboshop
+    application: catalogue
+  ports:
+  - protocol: TCP
+    port: 8080
+    targetPort: 8080

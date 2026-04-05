@@ -34,7 +34,7 @@ spec:
         image: chanakya1991/catalogue:v4
         envFrom:
         - configMapRef:
-          name: catalogue
+            name: catalogue
   
 ---
 apiVersion: v1 

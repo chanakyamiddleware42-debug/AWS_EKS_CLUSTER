@@ -35,8 +35,7 @@ spec:
     project: roboshop
     application: mongodb
   ports:
-  - protocol: tcp
-    port: 27017
+  - port: 27017
     targetPort: 27107
     
 

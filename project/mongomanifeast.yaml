@@ -20,5 +20,5 @@ spec:
     spec:
       containers:
       - name: mongodb
-        image: chanakya1991/mongodb
+        image: chanakya1991/mongodb:v2
         

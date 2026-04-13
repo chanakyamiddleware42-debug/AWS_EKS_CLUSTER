@@ -13,6 +13,6 @@ spec:
     project: roboshop
   tolerations:
   - key: "squad"
-    operator: "equal"
+    operator: "Equal"
     value: "telsa"
     effect: "NoExecute"

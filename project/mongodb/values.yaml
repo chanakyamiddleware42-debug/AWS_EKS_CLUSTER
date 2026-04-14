@@ -1,5 +1,5 @@
 deployment:
-   image: chanakya1991/mongodb:v2
+   image: chanakya1991/mongodb:v1
    tag: v2
    replicas: 3
    name: mongodb

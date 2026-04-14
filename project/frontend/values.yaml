@@ -1,6 +1,6 @@
 deployment:
    image: chanakya1991/frontend
-   tag: v2
+   tag: v4
    replicas: 8
    name: frontend
 service:

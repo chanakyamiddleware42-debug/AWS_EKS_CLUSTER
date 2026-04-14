@@ -11,5 +11,5 @@ spec:
     project: roboshop
     application: frontend
   ports:
-  - port: 27017
-    targetPort: 27107
+  - port: 80
+    targetPort: 80

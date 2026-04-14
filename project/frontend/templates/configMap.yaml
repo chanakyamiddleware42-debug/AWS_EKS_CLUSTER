@@ -1,0 +1,10 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: catalogue
+  labels:
+    project: roboshop
+    application: catalogue
+data:
+  MONGO: '"TRUE"'
+  MONGO_URL: "mongodb://10.43.92.196:27017/catalogue"

@@ -4,19 +4,19 @@ metadata:
   name: {{ .Values.deployment.name }}
   labels:
     project: roboshop
-    application: mongodb
+    application: frontend
 spec:
   replicas: {{ .Values.deployment.replicas }}
   selector:
     matchLabels:
       project: roboshop
-      application: mongodb
+      application: frontend
   template:
     metadata:
       name: pod
       labels:
         project: roboshop
-        application: mongodb
+        application: frontend
     spec:
       containers:
       - name: mongodb

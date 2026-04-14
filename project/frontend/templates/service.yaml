@@ -4,12 +4,12 @@ metadata:
   name: {{ .Values.deployment.name }}
   labels:
     project: roboshop
-    application: mongodb
+    application: frontend
 spec:
   type: {{ .Values.service.type }}
   selector:
     project: roboshop
-    application: mongodb
+    application: frontend
   ports:
   - port: 27017
     targetPort: 27107

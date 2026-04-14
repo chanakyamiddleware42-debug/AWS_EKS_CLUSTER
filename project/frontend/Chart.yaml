@@ -1,4 +1,4 @@
 apiVersion: v2 #The chart API version (required)
 name: frontend #The name of the chart (required)
-version: 1.0.4 #The version of the chart (required)
-description: installing to 1.0.4
+version: 1.0.5 #The version of the chart (required)
+description: installing to 1.0.5

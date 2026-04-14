@@ -1,7 +1,7 @@
 deployment:
    image: chanakya1991/frontend
-   tag: v4
-   replicas: 8
+   tag: v1
+   replicas: 0
    name: frontend
 service:
   type: LoadBalancer

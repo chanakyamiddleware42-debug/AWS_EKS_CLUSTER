@@ -1,0 +1,9 @@
+deployment:
+  replicas: 3
+  name: nginx
+  env: prod
+  image: nginx
+  tag: latest
+service:
+  type: LoadBalancer
+  servicename: loadbalancerservice

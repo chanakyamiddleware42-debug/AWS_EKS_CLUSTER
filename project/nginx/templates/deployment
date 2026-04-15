@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: {{ .Values.deployment.name }}-{{.Values.Deployment.env }}
+  labels:
+    app: roboshop
+spec:
+  replicas: {{ .Values.deployment.replicas }}
+  selector:
+    matchLabels:
+      app: roboshop
+  template:
+    metadata:
+      labels:
+        app: roboshop
+    spec:
+      containers:
+      - name: {{ .Values.deployment.name }}
+        image: "{{ .Values.deployment.image }}:{{ .Values.deployment.tag }}"
+        ports:
+        - containerPort: 80

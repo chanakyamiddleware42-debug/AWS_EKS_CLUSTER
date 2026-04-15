@@ -1,7 +1,7 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: "{{ .Values.deployment.name }}-{{ .Values.sevice.name }}"
+  name: "{{ .Values.deployment.name }}-{{ .Values.service.name }}"
 spec:
   type: {{ .Values.service.type }}
   selector:

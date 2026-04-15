@@ -1,7 +1,7 @@
 deployment:
    image: chanakya1991/mongodb
    tag: v1
-   replicas: 2
+   replicas: 4
    name: mongodb
 service:
   type: LoadBalancer

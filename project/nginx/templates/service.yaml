@@ -3,7 +3,7 @@ kind: Service
 metadata:
   name: service
 spec:
-  type: {{ .Values.service.type }}
+  type: LoadBalancer
   selector:
     app: roboshop
   ports:

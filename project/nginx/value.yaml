@@ -6,4 +6,4 @@ deployment:
   tag: latest
 service:
   type: LoadBalancer
-  name: loadbalancerservice
+  

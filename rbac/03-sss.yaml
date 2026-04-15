@@ -11,7 +11,7 @@ data:
     - groups:
       - roboshop-trainee
       userarn: arn:aws:iam::031277186300:user/chanakya
-      username: chanak
+      username: chanakya
 kind: ConfigMap
 metadata:
   creationTimestamp: "2026-04-15T09:21:20Z"

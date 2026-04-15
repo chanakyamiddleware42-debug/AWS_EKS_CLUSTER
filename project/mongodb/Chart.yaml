@@ -1,4 +1,5 @@
 apiVersion: v2 #The chart API version (required)
 name: mongodb #The name of the chart (required)
 version: 1.0.2 #The version of the chart (required)
+appVersion: 1.29.8
 description: installing to 1.0.2

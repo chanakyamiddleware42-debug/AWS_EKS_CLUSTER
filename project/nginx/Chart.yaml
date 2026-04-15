@@ -1,5 +1,5 @@
 apiVersion: v2 #The chart API version (required)
 name: nginx #The name of the chart (required)
-version: 1.0.0 #The version of the chart (required)
-appVersion: 1.29.8 A SemVer range of compatible Kubernetes versions (optional)
-description: upgrading to 1.29.8
+version: 1.0.1 #The version of the chart (required)
+appVersion: 1.29.9 A SemVer range of compatible Kubernetes versions (optional)
+description: upgrading to 1.29.9

@@ -1,9 +1,9 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: service
+  name: "{{ .Values.deployment.name }}-{{ .Values.sevice.name }}"
 spec:
-  type: LoadBalancer
+  type: {{ .Values.service.type }}
   selector:
     app: roboshop
   ports:

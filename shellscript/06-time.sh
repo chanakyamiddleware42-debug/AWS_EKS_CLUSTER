@@ -1,10 +1,10 @@
 #! /bin/bash
-STARTTIME=$(date)
+STARTTIME=$(date +%t)
 echo "script executed $STARTTIME"
 
 sleep 10
 
-ENDTIME=$(date)
+ENDTIME=$(date +%t)
 echo "script end timr $ENDTIME"
 
 EXCUTEDTIME=$(($STARTTIME-$ENDTIME))

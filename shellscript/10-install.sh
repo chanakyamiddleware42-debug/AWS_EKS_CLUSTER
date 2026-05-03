@@ -6,3 +6,7 @@ if [ $USERID -ne 0 ];  then
 fi
 
 dnf remove nginx -y
+
+if [ $? -ne 0]; then 
+   echo "nginx not removed"
+fi

@@ -11,7 +11,7 @@ LOG_FILE="/opt/chani/$0"
 
 
 if [ $USERID -ne 0 ];  then
-   echo -e " root access....$R ..unable to process...$G" | tee -a $LOG_FILE
+   echo -e " $Y ..root access....$R ..unable to process...$G" | tee -a $LOG_FILE
    exit 1
 fi
 VALIDATE() {

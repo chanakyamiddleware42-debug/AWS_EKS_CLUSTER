@@ -1,4 +1,8 @@
 #! /bin/bash
+R="\e[31m"
+G="\e[32m"
+Y="\e[33m"
+N="\e[0m"
 USERID=$(id -u)
 echo "$USERID"
 LOG_DIR="/opt/chani"
@@ -7,7 +11,7 @@ LOG_FILE="/opt/chani/$0"
 
 
 if [ $USERID -ne 0 ];  then
-   echo " root access" | tee -a $LOG_FILE
+   echo -e " root access....$R ..unable to process...$G" | tee -a $LOG_FILE
    exit 1
 fi
 VALIDATE() {

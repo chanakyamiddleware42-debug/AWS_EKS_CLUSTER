@@ -5,4 +5,4 @@ if [ $USERID -ne 0 ];  then
    echo " root access"
 fi
 
-dnf install nginx -y
+dnf uninstall nginx -y

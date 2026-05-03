@@ -1,4 +1,4 @@
-!#/bin/bash
+#!/bin/bash
 PERSON1=Chanakya
 PERSON2=Nararayanareddy
 echo $PERSON1:: Hi $PERSON2, have u working as  devepos Engineer

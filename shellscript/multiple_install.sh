@@ -5,7 +5,7 @@ if [ $USERID -ne 0 ];  then
    echo " root access"
    exit 1
 fi
-validate() {
+VALIDATE() {
 if [ $? -ne 0 ]; then 
    echo "$1 failed"
 else 
@@ -13,7 +13,7 @@ else
 fi
 }
 dnf install nginx -y
-validate "nginx installation"
+VALIDATE "nginx installation"
 
 dnf install mysql -y
-validate "mysql installation"
+VALIDATE "mysql installation"

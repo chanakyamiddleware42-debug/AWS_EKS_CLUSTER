@@ -5,7 +5,7 @@ if [ $USERID -ne 0 ];  then
    echo " root access"
 fi
 
-dnf remove nginx -y
+dnf install nginx -y
 
 if [ $? -ne 0 ]; then 
    echo "nginx not removed"

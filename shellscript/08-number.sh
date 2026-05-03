@@ -8,4 +8,4 @@ FRUITS=( "apple" "orange" "bbb")
 echo "fruits:${FRUITS[@]}"
 echo "first fruits: ${FRUITS[0]}"
 echo "second fruits: ${FRUITS[1]}"
-echo "thrid is: ${FRUITS[3]}"
+echo "thrid fruits: ${FRUITS[3]}"

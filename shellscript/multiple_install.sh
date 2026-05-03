@@ -12,7 +12,6 @@ else
     echo "$1 success"
 fi
 }
-
 dnf install nginx -y
 validate "nginx installation"
 
